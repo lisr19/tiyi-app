@@ -1,0 +1,184 @@
+/* -----mint-ui重写部分----- */
+.mint-header {
+  background-color: @grey-1;
+  height: 1rem;
+  font-size: 0.32rem;
+  font-weight: 500;
+  color: @black;
+  line-height: 0.44rem;
+}
+
+.mint-tabbar {
+  box-shadow: 0 0 0.01rem 0 rgba(0, 0, 0, 0.25);
+}
+
+/*-----------公共样式-------------*/
+
+/*--按钮---*/
+.hm-btn1 {
+  text-align: center;
+  width: 6.5rem;
+  height: 1rem;
+  background: @blue;
+  border-radius: 0.1rem;
+  padding: 0.22rem 0;
+  font-size: 0.4rem;
+  font-weight: 400;
+  color: @white;
+  line-height: 0.56rem;
+}
+.hm-btn2 {
+  text-align: center;
+  width: 1.96rem;
+  height: 0.7rem;
+  border-radius: 0.1rem;
+  border: 0.02rem solid @blue;
+  padding-top: 0.14rem;
+  font-size: 0.32rem;
+  font-weight: 400;
+  color: @blue;
+  line-height: 0.44rem;
+}
+.hm-btn3 {
+  text-align: center;
+  width: 1.2rem;
+  height: 0.58rem;
+  background: @black;
+  border-radius: 0.1rem;
+  padding-top: 0.12rem;
+  font-size: 0.24rem;
+  font-weight: 500;
+  color: @white;
+  line-height: 0.34rem;
+}
+.hm-btn4 {
+  text-align: center;
+  width: 1.2rem;
+  height: 0.58rem;
+  border-radius: 0.1rem;
+  border: 0.02rem solid @blue;
+  padding-top: 0.14rem;
+  font-size: 0.24rem;
+  font-weight: 400;
+  color: @blue;
+  line-height: 0.44rem;
+}
+
+/*--输入框---*/
+.hm-field-box {
+  width: 100%;
+  height: 1.06rem;
+  position: relative;
+  background-color: @white;
+  border-bottom: 0.02rem solid #e8e8e8;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  .hm-field-must::before {
+    content: '*';
+    color: @red;
+    margin-right: 0.05rem;
+  }
+  .hm-field-slot {
+    width: 72%;
+    height: 100%;
+  }
+  label {
+    width: 28%;
+    font-size: 0.28rem;
+    font-weight: 400;
+    color: @black;
+    line-height: 0.4rem;
+    padding: 0.315rem 0.1rem;
+    text-align: right;
+  }
+  input {
+    width: 72%;
+    outline: none;
+    font-size: 0.28rem;
+    font-weight: 400;
+    color: @black;
+    line-height: 0.4rem;
+    height: 100%;
+    padding: 0 1.3rem 0 0.1rem;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 0.28rem;
+    font-weight: 400;
+    color: rgba(205, 205, 205, 1);
+    line-height: 0.4rem;
+  }
+  .hm-field-btn {
+    position: absolute;
+    right: 0.2rem;
+    top: 0.2rem;
+    width: 0.94rem;
+    height: 0.6rem;
+    border: 0.02rem solid @blue;
+    padding-top: 0.14rem;
+    font-size: 0.2rem;
+    font-weight: 400;
+    color: @blue;
+    line-height: 0.3rem;
+    border-radius: 0.1rem;
+    text-align: center;
+  }
+  .hm-field-btn-active {
+    border: 0.02rem solid @light_grey;
+    color: @light_grey;
+  }
+}
+
+.hm-func {
+  top: 1.5rem;
+  right: 0.1rem;
+  img {
+    width: 0.2rem;
+    height: 0.15rem;
+    position: absolute;
+    right: 0.16rem;
+    top: -0.15rem;
+  }
+  > div {
+    background: rgba(68, 68, 68, 0.85);
+    border-radius: 0.1rem;
+    .hm-func-item {
+      min-width: 1.12rem;
+      font-size: 0.28rem;
+      font-weight: 500;
+      color: @white;
+      line-height: 0.4rem;
+      padding: 0.12rem 0.2rem;
+      text-align: center;
+      border-radius: 0.1rem;
+    }
+    .hm-func-item:hover {
+      background: rgba(68, 68, 68, 1);
+    }
+  }
+}
+.hm-search {
+  width: 100%;
+  padding: 0.2rem 0;
+  text-align: center;
+  position: relative;
+  background: rgba(249, 249, 249, 1);
+  z-index: 333;
+  input {
+    width: 6.52rem;
+    height: 0.72rem;
+    background: rgba(142, 142, 147, 0.12);
+    border-radius: 0.2rem;
+    margin-top: 0.18rem;
+    padding: 0 0.1rem 0 0.7rem;
+    font-size: 0.34rem;
+    font-weight: 400;
+    color: @black;
+    line-height: 0.44rem;
+    background-image: url('../../assets/logo/search.png');
+    background-repeat: no-repeat;
+    background-size: 0.28rem;
+    background-position: 0.24rem;
+  }
+}

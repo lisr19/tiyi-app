@@ -1,0 +1,105 @@
+
+
+/* -----初始化----- */
+* {
+  //margin: 0;
+  //padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 0;
+  background-color: @white;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  overflow: hidden;
+  position: relative;
+  width: 7.5rem;
+  height: 100%;
+  margin: auto;
+  -webkit-overflow-scrolling: touch; // 启用硬件加速，解决safari滑动卡顿的问题
+}
+
+a {
+  text-decoration: none;
+  -webkit-touch-callout: none;
+}
+
+img {
+  -webkit-touch-callout: none;
+}
+
+li {
+  list-style: none;
+}
+
+em, i {
+  font-style: normal;
+}
+
+.clear {
+  *zoom: 1;
+}
+
+.clear:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.html-share, .body-share {
+  overflow: hidden;
+  height: 100%;
+}
+
+.v-modal{
+  background: none;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+//input::placeholder {
+//  color: @light_grey;
+//}
+/* -----公共颜色----- */
+@white: #FFF;
+@black: #333;
+@pink: #FFE2E3;
+@gold: #F6AF56;
+@brown: #DAAF66;
+@light_green: #DBF3E9;
+@cyan: #65B3D5;
+@purple: #CC99FF;
+@light_grey: #999;
+@grey:#F2F2F2;
+@grey-1:#F1F1F1;
+@grey-2:#F8F8F8;
+@grey-3:#E3E3E3;
+@grey-4:#A6A6A6;
+@grey-5:#CFCFCF;
+@grey-6:#FBFBFB;
+@grey-7:#888888;
+@grey-8:#E8E8E8;
+@dull_grey:#8E8E93;
+@blue:#007AFF;
+@blue-1:#0175FF;
+@green:#00D52F;
+@light_red:#B24138;
+@red:#ff0000;
+@light_yellow:#FAE14A;
